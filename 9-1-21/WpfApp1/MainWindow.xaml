@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="My First WPF" Height="450" Width="800">
+    <Grid Margin="-90,-70,-118,-84">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://th.bing.com/th/id/OIP.FL-JA5Gz9WJOyhax-mj11gHaEK?w=198&amp;h=111&amp;c=7&amp;r=0&amp;o=5&amp;dpr=2&amp;pid=1.7" Stretch="Uniform"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Click Here!" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="237,99,0,0" VerticalAlignment="Top" Height="70" Width="135" Background="#FF90E7DF" Click="Button_Click" FontSize="36" FontFamily="Bodoni MT Poster Compressed" IsDefault="True"/>
+        <Label x:Name="lblAge" Content="Enter your Age:" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="277,206,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="lblOutput" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="452,261,0,0" VerticalAlignment="Top" Background="#FFF2E7E7" Foreground="#FFE61919" Height="33" Width="166" RenderTransformOrigin="0.488,0.543"/>
+        <Label Content="Enter your Name:" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="260,353,0,0" VerticalAlignment="Top" Height="49" Width="187" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtAge" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="452,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="28" Background="#FFE7DCDC"/>
+        <TextBox x:Name="txtName" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="452,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="33" Background="#FFF8F0F0"/>
+        <Label x:Name="lblNameReturn" Content="Label" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="454,406,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="35" Width="165" Background="#FFFFF5F5" Foreground="#FFF21212">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.062"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>
