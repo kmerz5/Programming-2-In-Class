@@ -10,8 +10,10 @@
         <TextBox x:Name="txt_AnyWord" HorizontalAlignment="Left" Margin="78,98,0,0" Text="&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="60" FontWeight="Bold" FontSize="18" Background="#FFF0CACA" BorderBrush="#FF000208"/>
         <TextBlock x:Name="txt_msg" HorizontalAlignment="Left" Margin="26,72,0,0" Text="Please enter any word you wish below." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Bahnschrift Condensed"/>
         <Button x:Name="btn_enter" Content="ENTER" HorizontalAlignment="Left" Margin="131,0,0,0" VerticalAlignment="Center" Background="#FFC5EDBE" FontSize="20" FontFamily="Bahnschrift Condensed" Height="65" Width="71" Click="btn_enter_Click"/>
-        <ListBox x:Name="lbx_vowels" Margin="356,128,253,57"/>
-        <ListBox x:Name="lbx_Consonants" Margin="552,128,42,57"/>
+        <ListBox x:Name="lbx_vowels" Margin="356,128,253,57" Background="#FFF7CCF6" FontSize="36" FontWeight="Bold"/>
+        <ListBox x:Name="lbx_Consonants" Margin="552,128,42,57" FontSize="36" FontWeight="Bold" Background="#FFF3CBF2"/>
+        <Label x:Name="lbl_Vowels" Content="Vowels" HorizontalAlignment="Left" Margin="423,98,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Bahnschrift Condensed"/>
+        <Label x:Name="lbl_consonants" Content="Consonants" HorizontalAlignment="Left" Margin="612,98,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift Condensed" FontWeight="Bold"/>
 
     </Grid>
 </Window>
