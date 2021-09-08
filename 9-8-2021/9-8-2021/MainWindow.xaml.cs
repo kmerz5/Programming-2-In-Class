@@ -27,6 +27,7 @@ namespace _9_8_2021
 
         private void btn_enter_Click(object sender, RoutedEventArgs e)
         {
+            
             string word = txt_AnyWord.Text;
 
             char[] chars = new char[word.Length - 1];
@@ -47,9 +48,11 @@ namespace _9_8_2021
                     lbx_Consonants.Items.Add(chars[i]);
 
                 }
+
                 
 
             }
+            txt_AnyWord.Clear();
 
         }
     }
