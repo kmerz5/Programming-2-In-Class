@@ -27,6 +27,8 @@ namespace _9_8_2021
 
         private void btn_enter_Click(object sender, RoutedEventArgs e)
         {
+            lbx_vowels.Items.Clear();
+            lbx_Consonants.Items.Clear();
             
             string word = txt_AnyWord.Text;
 
