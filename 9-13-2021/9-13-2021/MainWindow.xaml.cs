@@ -21,8 +21,28 @@ namespace _9_13_2021
     public partial class MainWindow : Window
     {
         public MainWindow()
+            //make sure this happens on button click
         {
-            InitializeComponent();
+            string id, fname, lname, gpa, probation, balance;
+            id = txt_id.Text;
+            fname = txt_fname.Text;
+            lname = txt_lname.Text;
+            gpa = txt_gpa.Text;
+            balance = txt_balance.Text;
+            probation = txt_probation.Text;
+
+            Student stud = new Student(Convert.ToInt32(id), fname, lname, Convert.ToDouble(balance));
+            stud.GPA = Convert.ToDouble(gpa);
+            if (probation.ToLower() == "yes")
+            {
+                stud.IsOnProbation = true;
+
+            }
+            else
+            {
+                stud.IsOnProbation = false;
+            }
+
         }
     }
 }

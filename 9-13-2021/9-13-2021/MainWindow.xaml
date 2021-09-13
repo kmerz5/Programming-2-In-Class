@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187*"/>
+            <ColumnDefinition Width="213*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_SoonerID1" Content="SoonerID:" HorizontalAlignment="Left" Margin="71,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_id" HorizontalAlignment="Left" Margin="138,64,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_lName" Content="Last Name:" HorizontalAlignment="Left" Margin="71,191,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_fName" Content="First Name:" HorizontalAlignment="Left" Margin="71,108,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_BursarBalance" Content="Bursar Balance:" HorizontalAlignment="Left" Margin="43,325,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_GPA" Content="GPA:" HorizontalAlignment="Left" Margin="71,269,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_balance" HorizontalAlignment="Left" Margin="138,338,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_gpa" HorizontalAlignment="Left" Margin="138,282,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_lname" HorizontalAlignment="Left" Margin="138,204,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_fname" HorizontalAlignment="Left" Margin="138,112,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_AddStudent" Content="Button" HorizontalAlignment="Left" Margin="338,154,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_probation" HorizontalAlignment="Left" Margin="138,406,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_probation" Content="Probation:" HorizontalAlignment="Left" Margin="43,398,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstbx_output" Grid.Column="1"/>
 
     </Grid>
 </Window>

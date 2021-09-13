@@ -49,5 +49,11 @@ namespace _9_13_2021
             return BursarBalance;
         }
 
+        public override string ToString()
+            {
+                return $"{LastName}, {FirstName}";
+            }
+        
+
     }
 }
