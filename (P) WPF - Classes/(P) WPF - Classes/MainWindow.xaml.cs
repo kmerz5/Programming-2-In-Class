@@ -37,5 +37,10 @@ namespace _P__WPF___Classes
             lstbx_Toys.Items.Add(toy);
 
         }
+
+        private void lstbx_Toys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
     }
 }
