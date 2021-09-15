@@ -22,7 +22,20 @@ namespace _P__WPF___Classes
     {
         public MainWindow()
         {
-            InitializeComponent();
+           
+        }
+
+        private void btn_enter_Click(object sender, RoutedEventArgs e)
+        {
+            string manufacturer, name, price, url;
+            manufacturer = txt_Manufacturer.Text;
+            name = txt_Name.Text;
+            price = txt_price.Text;
+            url = txt_URL.Text;
+
+            Toy toy = new Toy(manufacturer, name, Convert.ToDouble(price), url);
+            lstbx_Toys.Items.Add(toy);
+
         }
     }
 }

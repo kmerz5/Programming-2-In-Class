@@ -16,8 +16,10 @@
         <TextBox x:Name="txt_Manufacturer" HorizontalAlignment="Left" Margin="531,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="26" FontWeight="Bold" FontSize="14" BorderBrush="#FF000207"/>
         <TextBox x:Name="txt_price" HorizontalAlignment="Left" Margin="515,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="26" FontWeight="Bold" FontSize="14" BorderBrush="#FF000207"/>
         <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Margin="466,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="26" FontWeight="Bold" FontSize="14" BorderBrush="#FF000207"/>
-        <Button x:Name="btn_enter" Content="Enter" HorizontalAlignment="Left" Margin="614,123,0,0" VerticalAlignment="Top" Background="#FFCFE6CD" FontWeight="Bold" FontSize="16" Height="52" Width="81"/>
+        <Button x:Name="btn_enter" Content="Add Toy" HorizontalAlignment="Left" Margin="709,66,0,0" VerticalAlignment="Top" Background="#FFCFE6CD" FontWeight="Bold" FontSize="16" Height="52" Width="81" Click="btn_enter_Click"/>
         <ListBox x:Name="lstbx_Toys" Margin="0,217,580,0" Background="#FFD3AAAA" FontWeight="Bold"/>
+        <Label x:Name="lbl_URL" Content="Picture URL:" HorizontalAlignment="Left" Margin="400,127,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Background="#FFCBB3B3"/>
+        <TextBox x:Name="txt_URL" HorizontalAlignment="Left" Margin="513,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="26" FontWeight="Bold" FontSize="14" BorderBrush="#FF000207"/>
 
     </Grid>
 </Window>

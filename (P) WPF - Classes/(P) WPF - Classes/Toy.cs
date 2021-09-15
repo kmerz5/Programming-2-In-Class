@@ -22,11 +22,24 @@ namespace _P__WPF___Classes
             Aisle = string.Empty;
         }
 
+        public Toy(string manufacturer, string name, double price, string url)
+        {
+            Manufacturer = manufacturer;
+            Name = name;
+            Price = price;
+            Image = url;
+        }
+
         public string GetAisle()
         {
             char output = Manufacturer.ToUpper()[0];
-            return $"{output}{Price}";
+            return $"{output}{Price.ToString()}";
            
+        }
+
+        public override string ToString()
+        {
+            return $"{Manufacturer} - {Name}";
         }
     }
 }
