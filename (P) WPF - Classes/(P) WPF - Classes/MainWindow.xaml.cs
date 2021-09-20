@@ -40,7 +40,7 @@ namespace _P__WPF___Classes
 
         private void lstbx_Toys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            
+            //LOOK AT HIS CODE ON GITHUB HE ADDED THIS PORTION AND HOW TO CHANGE THE PHOTO
         }
     }
 }

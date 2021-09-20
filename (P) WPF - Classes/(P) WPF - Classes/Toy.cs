@@ -22,6 +22,7 @@ namespace _P__WPF___Classes
             Aisle = string.Empty;
         }
 
+
         public Toy(string manufacturer, string name, double price, string url)
         {
             Manufacturer = manufacturer;
