@@ -36,6 +36,7 @@ namespace WPF_Files
                 return;
             }
             //Go look at GitHub for his code for the other example of importing a file by using a Class
+            //also did an example of writing a file (which we wont need to do till later in semester)
 
             string[] fileContents = File.ReadAllLines(fileLocation);
 
