@@ -21,6 +21,7 @@ namespace _P__WPF___Contact_List
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Contact> contacts = new List<Contact>();
         public MainWindow()
         {
             InitializeComponent();
@@ -51,6 +52,7 @@ namespace _P__WPF___Contact_List
 
                 Contact information = new Contact(ID, firstName, lastName, email, photo);
                 lstbx_output.Items.Add(information);
+                contacts.Add(information);
 
             }
             }
@@ -68,6 +70,15 @@ namespace _P__WPF___Contact_List
             string[] fullname = item.Split(',');
             txt_FirstName.Text = fullname[1];
             txt_LastName.Text = fullname[0];
+
+           // foreach (Contact contact in contacts)
+           // {
+
+
+            //}
+
+
+
 
 
         }
