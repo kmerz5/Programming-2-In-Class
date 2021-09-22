@@ -6,8 +6,15 @@
         xmlns:local="clr-namespace:_P__WPF___Contact_List"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="lstbx_output" Margin="281,10,0,0" Background="#FFE2B7B7"/>
+    <Grid Background="#FFE3DBA6">
+        <ListBox x:Name="lstbx_output" Margin="543,0,0,0" Background="#FFE2B7B7" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lbl_FirstName" Content="First Name:" HorizontalAlignment="Left" Margin="62,103,0,0" VerticalAlignment="Top" Background="#FFF2E9E9" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lbl_Email" Content="Email:" HorizontalAlignment="Left" Margin="62,267,0,0" VerticalAlignment="Top" Background="#FFF2E9E9" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lbl_LastName" Content="Last Name:" HorizontalAlignment="Left" Margin="62,186,0,0" VerticalAlignment="Top" Background="#FFF2E9E9" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="txt_FirstName" HorizontalAlignment="Left" Margin="163,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="24"/>
+        <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Margin="122,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="24"/>
+        <TextBox x:Name="txt_LastName" HorizontalAlignment="Left" Margin="163,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="24"/>
+        <Button x:Name="btn_ShowDetails" Content="Show Details" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top" Background="#FFDAECB4" Height="63" Width="154" FontWeight="Bold" FontSize="22"/>
 
     </Grid>
 </Window>
