@@ -54,6 +54,22 @@ namespace _P__WPF___Contact_List
 
             }
             }
-           
+
+        private void btn_ShowDetails_Click(object sender, RoutedEventArgs e)
+        {
+            //want to find that is selected in the listbox, take that item and file through
+            //the list and find that name - then output the information about that person
+            //pieces[1] - FN
+            //pieces[2] - LN
+            //pieces[3] - Email
+            //pieces[4] - photo URL
+
+            string item = lstbx_output.SelectedItem.ToString();
+            string[] fullname = item.Split(',');
+            txt_FirstName.Text = fullname[1];
+            txt_LastName.Text = fullname[0];
+
+
+        }
     }
 }
