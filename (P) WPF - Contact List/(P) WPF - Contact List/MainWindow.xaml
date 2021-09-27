@@ -15,6 +15,7 @@
         <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Margin="122,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="24"/>
         <TextBox x:Name="txt_LastName" HorizontalAlignment="Left" Margin="163,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="24"/>
         <Button x:Name="btn_ShowDetails" Content="Show Details" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top" Background="#FFDAECB4" Height="63" Width="154" FontWeight="Bold" FontSize="22" Click="btn_ShowDetails_Click"/>
+        <Image x:Name="img_Contact" HorizontalAlignment="Left" Height="100" Margin="400,298,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

@@ -26,6 +26,8 @@ namespace _P__WPF___Contact_List
         {
             InitializeComponent();
 
+            //SHIFT + OPTION TO TYPE MULTIPLE LINES AT ONCE
+
             /*string[] fileContents = File.ReadAllLines(fileLocation);
 
             for (int i = 1; i < fileContents.Length; i++)
@@ -66,10 +68,14 @@ namespace _P__WPF___Contact_List
             //pieces[3] - Email
             //pieces[4] - photo URL
 
-            string item = lstbx_output.SelectedItem.ToString();
-            string[] fullname = item.Split(',');
-            txt_FirstName.Text = fullname[1];
-            txt_LastName.Text = fullname[0];
+            Contact selected = (Contact)lstbx_output.SelectedItem;
+            txt_Email.Text = selected.Email;
+            txt_FirstName.Text = selected.FirstName;
+            txt_LastName.Text = selected.LastName;
+            var uri = new Uri(selected.Photo);
+            var img = new BitmapImage(uri);
+
+            img_Contact.Source = img;
 
            // foreach (Contact contact in contacts)
            // {
