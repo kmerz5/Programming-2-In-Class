@@ -1,0 +1,16 @@
+﻿<Window x:Class="JSON_RickandMorty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON_RickandMorty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cbx_dropdown" HorizontalAlignment="Left" Margin="190,136,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbx_dropdown_SelectionChanged"/>
+        <Label x:Name="lbl_select" Content="Select a Character" HorizontalAlignment="Left" Margin="190,85,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="img_Character" HorizontalAlignment="Left" Height="267" Margin="400,147,0,0" VerticalAlignment="Top" Width="367"/>
+        <Label x:Name="lbl_Name" Content="" HorizontalAlignment="Left" Margin="373,98,0,0" VerticalAlignment="Top" Height="90" Width="417" FontWeight="Bold" FontSize="48"/>
+
+    </Grid>
+</Window>
