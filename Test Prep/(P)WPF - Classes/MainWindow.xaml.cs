@@ -38,5 +38,29 @@ namespace _P_WPF___Classes
     {
         InitializeComponent();
     }
-}
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            string manufacturer = txt_manufacturer.Text;
+            string name = txt_toy.Text;
+            string price = txt_price.Text;
+            string url = txt_url.Text;
+
+            Toy toy = new Toy(manufacturer, name, Convert.ToDouble(price), url);
+            lstbx_output.Items.Add(toy);
+
+            //Need to add the part for the double click and also changing the image.
+
+        }
+
+        private void lstbx_output_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Toy selectedToy = (Toy)lstbx_output.SelectedItem;
+            MessageBox.Show(selectedToy.GetAisle());
+
+            var uri = new Uri(selectedToy.Image);
+            var img = new BitmapImage(uri);
+            img_ToChange.Source = img;
+        }
+    }
 }

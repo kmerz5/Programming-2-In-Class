@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:_P_WPF___Classes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Black">
+        <Image x:Name="img_ToChange" HorizontalAlignment="Left" Height="159" Margin="466,242,0,0" VerticalAlignment="Top" Width="282" Source="http://images.summitmedia-digital.com/cosmo/images/2020/09/18/octopus-reversible-stuffed-toy-1600423213.jpg"/>
+        <Label x:Name="lbl_manufacturer" Content="Manufacturer:" HorizontalAlignment="Left" Margin="48,85,0,0" VerticalAlignment="Top" Height="29" Width="137" Foreground="#FFFDFBFB" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="lbl_price" Content="Toy Price:" HorizontalAlignment="Left" Margin="48,242,0,0" VerticalAlignment="Top" Height="37" Width="137" Foreground="#FFFDFBFB" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="lbl_image" Content="Image URL:" HorizontalAlignment="Left" Margin="48,188,0,0" VerticalAlignment="Top" Height="49" Width="137" Foreground="#FFFDFBFB" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="lbl_name" Content="Toy Name:" HorizontalAlignment="Left" Margin="48,131,0,0" VerticalAlignment="Top" Height="40" Width="137" Foreground="#FFFDFBFB" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="txt_manufacturer" HorizontalAlignment="Left" Margin="190,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_price" HorizontalAlignment="Left" Margin="155,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_url" HorizontalAlignment="Left" Margin="174,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_toy" HorizontalAlignment="Left" Margin="174,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lstbx_output" Margin="364,0,0,197" MouseDoubleClick="lstbx_output_MouseDoubleClick">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF570E89" Offset="0.004"/>
+                    <GradientStop Color="#FFB49EF0" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <Button x:Name="btn" Content="Add" HorizontalAlignment="Left" Margin="215,321,0,0" VerticalAlignment="Top" Height="61" Width="143" Background="#FF494747" FontWeight="Bold" FontSize="18" Click="btn_Click"/>
 
     </Grid>
 </Window>
