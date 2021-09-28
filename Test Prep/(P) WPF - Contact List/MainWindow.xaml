@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:_P__WPF___Contact_List"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFEDC3F9">
+        <ListBox x:Name="lstbx_contacts" Margin="476,45,0,0" Background="#FFE8DEDE"/>
+        <Label x:Name="lbl_contacts" Content="Contacts" HorizontalAlignment="Left" Margin="598,11,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lbl_first" Content="First Name:" HorizontalAlignment="Left" Margin="79,85,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Email" Content="Contact Email:" HorizontalAlignment="Left" Margin="79,147,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_last" Content="Last Name:" HorizontalAlignment="Left" Margin="79,116,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="img_picture" HorizontalAlignment="Left" Height="222" Margin="65,199,0,0" VerticalAlignment="Top" Width="298"/>
+        <TextBox x:Name="txt_First" HorizontalAlignment="Left" Margin="154,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_email" HorizontalAlignment="Left" Margin="169,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_last" HorizontalAlignment="Left" Margin="154,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_show" Content="Go!" HorizontalAlignment="Left" Margin="314,28,0,0" VerticalAlignment="Top" Height="51" Width="86" Background="#FFD6F3B8" Click="btn_show_Click"/>
 
     </Grid>
 </Window>
