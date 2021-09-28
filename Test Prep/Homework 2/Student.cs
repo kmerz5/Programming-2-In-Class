@@ -44,7 +44,7 @@ namespace Homework_2
 
             if (GPA >= 3.80)//want to go from greatest to least because that way if it is not greater than 3.8 then it willmove on to the next else if
             {
-                gpaStatus = "Cum Laude";
+                gpaStatus = "Summa Cum Laude";
 
             }
             else if (GPA >= 3.60)
@@ -54,7 +54,7 @@ namespace Homework_2
             }
             else if (GPA >=3.40)
             {
-                gpaStatus = "Summa Cum Laude";
+                gpaStatus = "Cum Laude";
 
             }
             else
