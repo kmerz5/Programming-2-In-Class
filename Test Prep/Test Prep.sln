@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) WPF - First WPF Assignment", "Test Prep\(P) WPF - First WPF Assignment.csproj", "{F5BDC15B-ED55-4599-9170-489E732B252C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P) WPF - First WPF Assignment", "Test Prep\(P) WPF - First WPF Assignment.csproj", "{F5BDC15B-ED55-4599-9170-489E732B252C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P)WPF - Vowels and Consonants", "(P)WPF - Vowels and Consonants\(P)WPF - Vowels and Consonants.csproj", "{365B2866-8280-44CC-A484-3AD6AA49085B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P)WPF - Vowels and Consonants", "(P)WPF - Vowels and Consonants\(P)WPF - Vowels and Consonants.csproj", "{365B2866-8280-44CC-A484-3AD6AA49085B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P)WPF - Classes", "(P)WPF - Classes\(P)WPF - Classes.csproj", "{C0D8C438-B1B9-467B-98BF-AF795E19FCDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P)WPF - Classes", "(P)WPF - Classes\(P)WPF - Classes.csproj", "{C0D8C438-B1B9-467B-98BF-AF795E19FCDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) WPF - Contact List", "(P) WPF - Contact List\(P) WPF - Contact List.csproj", "{E0B33524-45A6-470E-B23A-F2AA7CF43598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P) WPF - Contact List", "(P) WPF - Contact List\(P) WPF - Contact List.csproj", "{E0B33524-45A6-470E-B23A-F2AA7CF43598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW 2 - GraduationHandout", "Homework 2\HW 2 - GraduationHandout.csproj", "{7002FBE1-4A71-4456-AAAC-0DE4BA3097D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E0B33524-45A6-470E-B23A-F2AA7CF43598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0B33524-45A6-470E-B23A-F2AA7CF43598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0B33524-45A6-470E-B23A-F2AA7CF43598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7002FBE1-4A71-4456-AAAC-0DE4BA3097D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7002FBE1-4A71-4456-AAAC-0DE4BA3097D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7002FBE1-4A71-4456-AAAC-0DE4BA3097D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7002FBE1-4A71-4456-AAAC-0DE4BA3097D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
