@@ -21,13 +21,14 @@ namespace ContactList_2_
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Contact> contactS = new List<Contact>();
         public MainWindow()
         {
             InitializeComponent();
 
             /*You are challenged to create a WPF Application so that you can load in your contacts (see file below).
              * 
-             * Your application should read in the data ONCE and store it all in a ListBox 
+             * Your application should read in the data ONCE and store it all in a ListBox ----DONE----
              * where the user can select a contact from the ListBox and press a button to see the details about the contact.  
              * You should have labels and textboxes to accurately describe the data as well as the values, do NOT worry about showing the Id as that is just for storage purposes.  
              * Although you will put the values in the Textbox's, the user should NOT be able to change the values (hint: this is a property we talked about on the control).  
@@ -42,15 +43,33 @@ namespace ContactList_2_
                 string[] pieces = line.Split('|');
 
                 string id = pieces[0];
+                double iD = Convert.ToDouble(id);
                 string firstname = pieces[1];
                 string lastname = pieces[2];
                 string email = pieces[3];
                 string photo = pieces[4];
 
-                string output = $"{lastname}, {firstname}";
-                lbx_contacts.Items.Add(output);
+                Contact information = new Contact(iD, firstname, lastname, email, photo);
+                
+                lbx_contacts.Items.Add(information);
+                contactS.Add(information);
+
 
             }
+        }
+
+        private void btn_details_Click(object sender, RoutedEventArgs e)
+        {
+            //we want to find the contact in our list and find their information
+            Contact selecter = (Contact)lbx_contacts.SelectedItem;
+            txt_email.Text = selecter.Email;
+            txt_first.Text = selecter.FirstName;
+            txt_last.Text = selecter.LastName;
+
+            var uri = new Uri(selecter.Photo);
+            var img = new BitmapImage(uri);
+
+            img_contact.Source = img;
         }
     }
 }
