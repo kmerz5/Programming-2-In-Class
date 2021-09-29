@@ -7,12 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFF0C9F0">
-        <ComboBox x:Name="cbx_rated" HorizontalAlignment="Left" Margin="134,239,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbx_language" HorizontalAlignment="Left" Margin="553,239,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbx_country" HorizontalAlignment="Center" Margin="0,239,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbx_rated" HorizontalAlignment="Left" Margin="134,239,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbx_rated_SelectionChanged"/>
+        <ComboBox x:Name="cbx_language" HorizontalAlignment="Left" Margin="553,239,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbx_language_SelectionChanged"/>
+        <ComboBox x:Name="cbx_country" HorizontalAlignment="Center" Margin="0,239,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbx_country_SelectionChanged"/>
         <Label x:Name="lbl_1" Content="Rated" HorizontalAlignment="Left" Margin="174,0,0,0" VerticalAlignment="Center"/>
         <Label x:Name="lbl_1_Copy" Content="Language" HorizontalAlignment="Left" Margin="582,0,0,0" VerticalAlignment="Center"/>
         <Label x:Name="lbl_1_Copy1" Content="Country" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <ListBox x:Name="lbx_output" Height="147" VerticalAlignment="Top" Margin="0,287,0,0"/>
+        <Image x:Name="img_poster" HorizontalAlignment="Left" Height="118" Margin="448,39,0,0" VerticalAlignment="Top" Width="171"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="95,97,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>
