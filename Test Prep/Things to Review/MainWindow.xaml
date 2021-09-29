@@ -13,6 +13,11 @@
         <TextBlock x:Name="tb2" HorizontalAlignment="Left" Margin="169,157,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="273,65,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Image x:Name="img_picture" HorizontalAlignment="Left" Height="118" Margin="69,287,0,0" VerticalAlignment="Top" Width="152"/>
+        <TextBox x:Name="txt_word" HorizontalAlignment="Left" Margin="233,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_double" HorizontalAlignment="Left" Margin="233,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Word" HorizontalAlignment="Left" Margin="275,243,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number" HorizontalAlignment="Left" Margin="268,292,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="275,355,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
