@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralPractice", "GeneralP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vowels and Consonants (2)", "Vowels and Consonants (2)\Vowels and Consonants (2).csproj", "{BDF51CD0-5CEF-4661-A6A5-8E39FA42A12E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes(2)", "Classes(2)\Classes(2).csproj", "{1C6D859C-2840-4D75-94D4-E6DE7826D00D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{BDF51CD0-5CEF-4661-A6A5-8E39FA42A12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDF51CD0-5CEF-4661-A6A5-8E39FA42A12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDF51CD0-5CEF-4661-A6A5-8E39FA42A12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6D859C-2840-4D75-94D4-E6DE7826D00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6D859C-2840-4D75-94D4-E6DE7826D00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6D859C-2840-4D75-94D4-E6DE7826D00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6D859C-2840-4D75-94D4-E6DE7826D00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

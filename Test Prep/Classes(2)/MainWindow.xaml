@@ -1,0 +1,23 @@
+﻿<Window x:Class="Classes_2_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Classes_2_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFECE4B0">
+        <Image x:Name="img_toy" HorizontalAlignment="Left" Height="145" Margin="41,32,0,0" VerticalAlignment="Top" Width="269" Source="https://img.chewy.com/is/image/catalog/124997_MAIN._AC_SL1500_V1530549415_.jpg"/>
+        <TextBox x:Name="txt_manufacturer" HorizontalAlignment="Left" Margin="605,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_price" HorizontalAlignment="Left" Margin="605,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_image" HorizontalAlignment="Left" Margin="605,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="74"/>
+        <TextBox x:Name="txt_name" HorizontalAlignment="Left" Margin="605,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl1" Content="Manufacturer:" HorizontalAlignment="Left" Margin="516,85,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl1_Copy" Content="Toy Price:" HorizontalAlignment="Left" Margin="531,266,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl1_Copy1" Content="Image URL:" HorizontalAlignment="Left" Margin="521,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl1_Copy2" Content="Toy Name:" HorizontalAlignment="Left" Margin="521,126,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Add" Content="Add Toy" HorizontalAlignment="Left" Margin="605,347,0,0" VerticalAlignment="Top" Height="44" Width="120" Click="btn_Add_Click"/>
+        <ListBox x:Name="lbx_output" Margin="0,209,400,0" Background="#FFF7D1D1" MouseDoubleClick="lbx_output_MouseDoubleClick"/>
+
+    </Grid>
+</Window>
