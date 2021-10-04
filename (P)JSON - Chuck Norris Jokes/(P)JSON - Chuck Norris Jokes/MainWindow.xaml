@@ -1,0 +1,18 @@
+﻿<Window x:Class="_P_JSON___Chuck_Norris_Jokes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P_JSON___Chuck_Norris_Jokes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://wallpapercave.com/wp/PDE9sTN.jpg"/>
+        </Grid.Background>
+        <ComboBox x:Name="cbx_categories" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="278" Height="68" FontSize="48"/>
+        <Button x:Name="btn_joke" Content="Show Joke!" HorizontalAlignment="Left" Margin="565,22,0,0" VerticalAlignment="Top" Height="44" Width="164" FontWeight="Bold" FontSize="22" FontFamily="Agency FB" Background="#FFACD7AC" Click="btn_joke_Click"/>
+        <TextBox x:Name="txt_joke" HorizontalAlignment="Left" Margin="99,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="606" Height="90" FontSize="18" FontFamily="Rockwell Extra Bold"/>
+
+    </Grid>
+</Window>
