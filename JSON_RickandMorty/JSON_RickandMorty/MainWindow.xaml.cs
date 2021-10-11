@@ -28,20 +28,37 @@ namespace JSON_RickandMorty
 
             using (var client = new HttpClient())
             {
+
+                //Need to make a loop that will read in the 20 from the first link then go to the Next link and 
+                //read in that link)
+
+                for (int i = 0; i < Info.Length; i++)
+                {
+                    string jsonData = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
+                    RickandMortyAPI api = JsonConvert.DeserializeObject<RickandMortyAPI>(jsonData);
+
+                    //populate combo box
+                    foreach (Character item in api.results)
+                    {
+                        cbx_dropdown.Items.Add(item);
+
+                    }
+
+                }
                 //make sure the resource is closed off from the internet, not just hanging around
                 //creating this variable with this scope - so it makes sure you dispose of that object and dont have a communication channel open
-                string jsonData = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result; //gonna copy and paste what we have inside a string
+                //string jsonData = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result; //gonna copy and paste what we have inside a string
                 //syncroness (like waiting for the person with the batton to give it to you before you start
                 //Asyncroness (everyone going at the same time and whoever is the slowest looses - we do not do this in this class (but modern web works this way)
 
-                RickandMortyAPI api = JsonConvert.DeserializeObject<RickandMortyAPI>(jsonData);
+               // RickandMortyAPI api = JsonConvert.DeserializeObject<RickandMortyAPI>(jsonData);
 
                 //populate combo box
-                foreach (Character item in api.results)
-                {
-                    cbx_dropdown.Items.Add(item);
+                //foreach (Character item in api.results)
+                //{
+                    //cbx_dropdown.Items.Add(item);
 
-                }
+                //}
             }
         }
 
