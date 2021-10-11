@@ -22,26 +22,59 @@ namespace _P_JSON___Pokemon
     /// </summary>
     public partial class MainWindow : Window
     {
+        PokemonInfo pokemon;
         public MainWindow()
         {
             InitializeComponent();
 
+            string url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1200";
+
             using (var client = new HttpClient())
             {
-                string json = client.GetStringAsync("https://pokeapi.co/api/v2/pokemon").Result;
+                var response = client.GetAsync(url).Result;
 
-
-
-                PokemonApi name = JsonConvert.DeserializeObject<PokemonApi>(json);
-                
-
-                foreach (Data names in name.results)
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    cbx_pokemon.Items.Add(names);
+                    string json = response.Content.ReadAsStringAsync().Result;
+
+                    PokemonApi api = JsonConvert.DeserializeObject<PokemonApi>(json);
+
+                    foreach (var resultItem in api.results)
+                    {
+                        cbx_pokemon.Items.Add(resultItem);
+                    }
 
                 }
 
+
+
+                
+
             }
+        }
+
+        private void cbx_pokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Data selected = (Data)cbx_pokemon.SelectedItem;
+            using (var client = new HttpClient())
+            {
+                var response = client.GetAsync(selected.url).Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    string json = response.Content.ReadAsStringAsync().Result;
+
+                    PokemonInfo pokemon = JsonConvert.DeserializeObject<PokemonInfo>(json);
+                    img_pokemon.Source = new BitmapImage(new Uri(pokemon.sprites.front_default));
+                }
+
+            }
+        }
+        //GO LOOK AT GITHUB FOR THE REST OF THE CODE!!!!!
+        private void btn_Toggle_Click(object sender, RoutedEventArgs e)
+        {
+            img_pokemon.Source = new BitmapImage(new Uri(pokemon.sprites.back_default));
+
         }
     }
 }

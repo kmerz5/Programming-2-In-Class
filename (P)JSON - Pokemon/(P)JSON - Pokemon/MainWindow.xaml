@@ -13,8 +13,8 @@
                 <GradientStop Color="#FFB48989" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ComboBox x:Name="cbx_pokemon" HorizontalAlignment="Left" Margin="171,85,0,0" VerticalAlignment="Top" Width="229" Height="53"/>
-        <Button x:Name="btn_Toggle" Content="Toggle" HorizontalAlignment="Left" Margin="498,173,0,0" VerticalAlignment="Top" Height="79" Width="135" Background="#FF944B4B" FontWeight="Bold" FontSize="24"/>
+        <ComboBox x:Name="cbx_pokemon" HorizontalAlignment="Left" Margin="171,85,0,0" VerticalAlignment="Top" Width="229" Height="53" SelectionChanged="cbx_pokemon_SelectionChanged"/>
+        <Button x:Name="btn_Toggle" Content="Toggle" HorizontalAlignment="Left" Margin="498,173,0,0" VerticalAlignment="Top" Height="79" Width="135" Background="#FF944B4B" FontWeight="Bold" FontSize="24" Click="btn_Toggle_Click"/>
         <Image x:Name="img_pokemon" HorizontalAlignment="Left" Height="160" Margin="470,252,0,0" VerticalAlignment="Top" Width="197"/>
         <Label Content="Choose Your Pokemon!" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Kristen ITC" FontWeight="Bold"/>
         <Label Content="Height:" HorizontalAlignment="Left" Margin="10,256,0,0" VerticalAlignment="Top" FontSize="20"/>
