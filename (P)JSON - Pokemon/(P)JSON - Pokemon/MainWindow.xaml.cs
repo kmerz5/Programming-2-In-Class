@@ -75,6 +75,7 @@ namespace _P_JSON___Pokemon
         {
             img_pokemon.Source = new BitmapImage(new Uri(pokemon.sprites.back_default));
 
+
         }
     }
 }
