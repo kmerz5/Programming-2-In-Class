@@ -31,7 +31,7 @@ namespace JSON_RickandMorty
 
                 //Need to make a loop that will read in the 20 from the first link then go to the Next link and 
                 //read in that link)
-
+                //GO LOOK AT GITHUB FOR THE CODE
                 for (int i = 0; i < Info.Length; i++)
                 {
                     string jsonData = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
