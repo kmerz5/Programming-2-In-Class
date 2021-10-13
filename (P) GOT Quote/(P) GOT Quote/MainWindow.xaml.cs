@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -22,6 +23,7 @@ namespace _P__GOT_Quote
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<GOTAPI> quotes = new List<GOTAPI>();
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace _P__GOT_Quote
 
                 GOTAPI rand = JsonConvert.DeserializeObject<GOTAPI>(json);
                 txt_quote.Text = $" \"{rand.quote}\"";
+                quotes.Add(rand);
 
 
 
@@ -43,6 +46,8 @@ namespace _P__GOT_Quote
 
         private void btn_export_Click(object sender, RoutedEventArgs e)
         {
+            string json = JsonConvert.SerializeObject(quotes);
+            File.WriteAllText("GOT_Quotes.Json", json);
 
         }
     }
