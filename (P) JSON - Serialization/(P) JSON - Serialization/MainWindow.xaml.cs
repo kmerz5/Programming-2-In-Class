@@ -35,7 +35,7 @@ namespace _P__JSON___Serialization
                 string line = lines[i];
                 string[] pieces = line.Split(',');
 
-
+              
                 string name = pieces[0];
                 string platform = pieces[1];
                 string release_date = pieces[2];
@@ -43,23 +43,31 @@ namespace _P__JSON___Serialization
                 string meta_score = pieces[4];
                 int gamemeta_score = Convert.ToInt32(meta_score);
                 string user_review = pieces[5];
-                double gameuser_review = Convert.ToDouble(user_review);
+                
 
-                Games information = new Games(name, platform, release_date, summary, gamemeta_score, gameuser_review);
+                Games information = new Games(name, platform, release_date, summary, gamemeta_score, user_review);
                 games.Add(information);
 
                 //populate the combobox
-                    if (cbx_platform.Text.Contains(game1.platform) == false)
+                    if (cbx_platform.Items.Contains(information.platform) == false)
                     {
-                        cbx_platform.Items.Add(game1.platform);
+                        cbx_platform.Items.Add(information.platform);
 
                     }
+
+                lbx_games.Items.Add(information);
 
                 
                 
 
             }
 
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string selectedPlatform = cbx_platform.Text;
+            //GO LOOK AT HIS CODE IN GITHUB TO GET A BETTER IDEA AS YOURS IS MISMATCHED WITH HIS AND DOES NOT MAKE SENSE  
         }
     }
 }

@@ -12,7 +12,7 @@ namespace _P__JSON___Serialization
         public string release_date { get; set; }
         public string summary { get; set; }
         public int meta_score { get; set; }
-        public double user_review { get; set; }
+        public string user_review { get; set; }
 
         public Games()
         {
@@ -21,17 +21,17 @@ namespace _P__JSON___Serialization
             release_date = string.Empty;
             summary = string.Empty;
             meta_score = 0;
-            user_review = 0.0;
+            user_review = string.Empty;
         }
 
-        public Games(string gamename, string gameplatform, string gamerelease_date, string gamesummary, int gamemeta_score, double gameuser_review)
+        public Games(string gamename, string gameplatform, string gamerelease_date, string gamesummary, int gamemeta_score, string user_review)
         {
             name = gamename;
             platform = gameplatform;
             release_date = gamerelease_date;
             summary = gamesummary;
             meta_score = gamemeta_score;
-            user_review = gameuser_review;
+            user_review = user_review;
 
         }
 
