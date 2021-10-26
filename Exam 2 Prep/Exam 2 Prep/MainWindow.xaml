@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://images.wallpapersden.com/image/download/game-of-thrones-season-8_a2loZmuUmZqaraWkpJRmbmdlrWZlbWU.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btn_getquote" Content="Get Quote" HorizontalAlignment="Left" Margin="31,39,0,0" VerticalAlignment="Top" Background="#FFE65656" FontSize="22" FontWeight="Bold" FontFamily="Algerian" Click="btn_getquote_Click"/>
+        <TextBlock x:Name="txt_quote" HorizontalAlignment="Left" Margin="201,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="554" OpacityMask="#FFF9F8F8" FontSize="14" FontWeight="Bold" FontFamily="Arial Black">
+            <TextBlock.Background>
+                <SolidColorBrush Color="#FFF9F3F3" Opacity="0.4"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="31,91,0,0" VerticalAlignment="Top" Height="32" Width="122" Background="#FFCD5555" FontSize="24" FontFamily="Algerian" FontWeight="Bold" Click="btnExport_Click"/>
+        <TextBlock x:Name="txt_character" HorizontalAlignment="Left" Margin="569,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="186" OpacityMask="#FFF9F8F8" FontSize="14" FontWeight="Bold" FontFamily="Arial Black">
+            <TextBlock.Background>
+                <SolidColorBrush Color="#FFF9F3F3" Opacity="0.4"/>
+            </TextBlock.Background>
+        </TextBlock>
 
     </Grid>
 </Window>
