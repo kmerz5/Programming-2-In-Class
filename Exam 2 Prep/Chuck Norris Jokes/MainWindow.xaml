@@ -12,7 +12,7 @@
         </Grid.Background>
         <ComboBox x:Name="cbx_categories" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" Width="185" Height="31"/>
         <Label Content="Choose Your Category:" HorizontalAlignment="Left" Margin="21,171,0,0" VerticalAlignment="Top" Background="#FFF07676" Height="26" Width="185"/>
-        <Button x:Name="btn_displayjoke" Content="Display Joke" HorizontalAlignment="Left" Margin="259,189,0,0" VerticalAlignment="Top" Height="28" Width="81" Background="#FFEC8383"/>
+        <Button x:Name="btn_displayjoke" Content="Display Joke" HorizontalAlignment="Left" Margin="259,189,0,0" VerticalAlignment="Top" Height="28" Width="81" Background="#FFEC8383" Click="btn_displayjoke_Click"/>
         <TextBlock x:Name="txt_joke" HorizontalAlignment="Left" Margin="21,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="155" Width="319">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

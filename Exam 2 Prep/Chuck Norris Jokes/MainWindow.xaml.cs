@@ -39,7 +39,9 @@ namespace Chuck_Norris_Jokes
        
         public MainWindow()
         {
+            
             InitializeComponent();
+            cbx_categories.Items.Add("All");
 
             using (var client = new HttpClient())
             {
@@ -54,6 +56,32 @@ namespace Chuck_Norris_Jokes
                 }
 
                 
+            }
+        }
+
+        private void btn_displayjoke_Click(object sender, RoutedEventArgs e)
+        {
+            string url;
+            string Category = cbx_categories.SelectedItem.ToString();
+            if (cbx_categories.SelectedItem.ToString() == "All")
+            {
+                url = "https://api.chucknorris.io/jokes/random";
+
+            }
+            else
+            {
+                url = $"https://api.chucknorris.io/jokes/random?category=";
+                url += Category;
+            }
+
+
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+                JokeAPI joke = JsonConvert.DeserializeObject<JokeAPI>(json);
+
+                txt_joke.Text = (joke.value);
             }
         }
     }
