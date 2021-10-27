@@ -36,5 +36,9 @@ namespace Serialization
             user_review = User_Review;
         }
 
+        public override string ToString()
+        {
+            return name;
+        }
     }
 }

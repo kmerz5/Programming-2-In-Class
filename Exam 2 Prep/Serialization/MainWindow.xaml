@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="cbx_platforms" HorizontalAlignment="Left" Margin="38,55,0,0" VerticalAlignment="Top" Width="281" Height="55"/>
-        <ListBox x:Name="lbx_games" Margin="352,0,0,0"/>
+        <ComboBox x:Name="cbx_platforms" HorizontalAlignment="Left" Margin="38,55,0,0" VerticalAlignment="Top" Width="281" Height="55" SelectionChanged="cbx_platforms_SelectionChanged"/>
+        <ListBox x:Name="lbx_games" Margin="352,0,0,0" MouseDoubleClick="lbx_games_MouseDoubleClick_1"/>
 
     </Grid>
 </Window>

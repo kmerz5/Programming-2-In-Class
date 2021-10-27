@@ -44,6 +44,7 @@ namespace Serialization
         public MainWindow()
         {
             InitializeComponent();
+            cbx_platforms.Items.Add("All");
 
             string[] lines = File.ReadAllLines("all_games (1).csv").Skip(1).ToArray();
 
@@ -71,6 +72,44 @@ namespace Serialization
                
 
             }
+
+        }
+
+        private void cbx_platforms_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lbx_games.Items.Clear();
+            string selectedplatform = cbx_platforms.SelectedItem.ToString();
+            foreach (var gamename in allgames)
+            {
+                if (selectedplatform == "All")
+                {
+                    lbx_games.Items.Add(gamename);
+
+                }
+                else if (gamename.platform == selectedplatform)
+                {
+
+                    lbx_games.Items.Add(gamename);
+
+                }
+
+            }
+        }
+
+        
+
+        private void lbx_games_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
+        {
+            Game selected = (Game)lbx_games.SelectedItem;
+
+            if (selected is null)
+            {
+                return;
+            }
+
+            WindowDetails wd = new WindowDetails();
+            wd.SetData(selected);
+            wd.ShowDialog();
 
         }
     }
