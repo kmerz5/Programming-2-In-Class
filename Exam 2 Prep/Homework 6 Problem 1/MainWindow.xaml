@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ComboBox x:Name="cbx_color" HorizontalAlignment="Left" Margin="76,41,0,0" VerticalAlignment="Top" Width="234" Height="40"/>
+        <TextBox x:Name="txt_year" HorizontalAlignment="Left" Margin="76,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="33" FontSize="18"/>
+        <Label Content="Please type in the Year you Would&#xD;&#xA;LIke to See:" HorizontalAlignment="Left" Margin="76,119,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbx_otheryears" HorizontalAlignment="Left" Margin="76,279,0,0" VerticalAlignment="Top" Width="234" Height="40"/>
+        <Label Content="Please Select what other years you would &#xD;&#xA;like to see, if any:&#xD;&#xA;" HorizontalAlignment="Left" Margin="76,232,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbx_results" Margin="374,0,0,115" Background="#FFFBE1E1"/>
+        <Label Content="Item Count:" HorizontalAlignment="Left" Margin="536,320,0,0" VerticalAlignment="Top" Width="111" FontSize="20" FontFamily="Curlz MT"/>
+        <TextBox x:Name="txt_resultcount" HorizontalAlignment="Left" Margin="630,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Height="28" FontSize="20" FontFamily="Curlz MT" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn_showcars" Content="Show Cars!" HorizontalAlignment="Left" Margin="127,353,0,0" VerticalAlignment="Top" Height="53" Width="129" Background="#FFFBE1E1" FontFamily="Castellar" FontWeight="Bold" FontSize="16" Click="btn_showcars_Click"/>
+        <Label Content="Please Select a Color:&#xA;" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_export" Content="Export" HorizontalAlignment="Left" Margin="562,391,0,0" VerticalAlignment="Top" Height="33" Width="59" Click="btn_export_Click"/>
 
     </Grid>
 </Window>
