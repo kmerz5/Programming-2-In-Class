@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btn_getvideo" Content="Get Random Video" HorizontalAlignment="Left" Margin="122,27,0,0" VerticalAlignment="Top" Height="78" Width="545" FontFamily="Bahnschrift Condensed" FontSize="72" Click="btn_getvideo_Click"/>
+        <MediaElement x:Name="media_video" HorizontalAlignment="Left" Height="214" Margin="133,121,0,0" VerticalAlignment="Top" Width="542"/>
+        <Button x:Name="btn_play_pause" Content="Play" HorizontalAlignment="Left" Margin="365,378,0,0" VerticalAlignment="Top" Height="33" Width="59" Click="btn_play_pause_Click"/>
+        <Button x:Name="btn_stop" Content="Stop&#xD;&#xA;" HorizontalAlignment="Left" Margin="603,378,0,0" VerticalAlignment="Top" Height="33" Width="64" Click="btn_stop_Click"/>
 
     </Grid>
 </Window>

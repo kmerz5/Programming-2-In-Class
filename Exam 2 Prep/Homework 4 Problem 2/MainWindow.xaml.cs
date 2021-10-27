@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,6 +31,53 @@ namespace Homework_4_Problem_2
         public MainWindow()
         {
             InitializeComponent();
+            btn_play_pause.IsEnabled = false;
+            btn_stop.IsEnabled = false;
+            media_video.LoadedBehavior = MediaState.Manual;
+        }
+
+        private void btn_getvideo_Click(object sender, RoutedEventArgs e)
+        {
+            using (var client = new HttpClient())
+            {
+                var response = client.GetAsync("http://pcbstuou.w27.wh-2.com/webservices/3033/api/random/video ").Result;
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    string json = response.Content.ReadAsStringAsync().Result;
+                    RandVidAPI video = JsonConvert.DeserializeObject<RandVidAPI>(json);
+                    media_video.Source = new Uri(video.url);
+                    btn_play_pause.Content = "Play";
+                    btn_play_pause.IsEnabled = true;
+                    btn_stop.IsEnabled = true;
+                }
+
+            }
+
+            
+        }
+
+        private void btn_play_pause_Click(object sender, RoutedEventArgs e)
+        {
+            string status = btn_play_pause.Content.ToString().ToLower();
+            switch (status)
+            {
+                case "play":
+                    media_video.Play();
+                    btn_play_pause.Content = "Pause";
+                    break;
+
+                case "pause":
+                    media_video.Pause();
+                    btn_play_pause.Content = "Play";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void btn_stop_Click(object sender, RoutedEventArgs e)
+        {
+            media_video.Stop();
         }
     }
 }

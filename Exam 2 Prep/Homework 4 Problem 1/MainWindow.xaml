@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Image x:Name="img_dog" HorizontalAlignment="Left" Height="263" Margin="400,90,0,0" VerticalAlignment="Top" Width="327"/>
+        <TextBox x:Name="txt_breed" HorizontalAlignment="Left" Margin="52,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Height="43" FontSize="24" FontFamily="Agency FB" Background="#FFEDB0F3"/>
+        <Label Content="Please type in the dog breed&#xD;&#xA;you would like to see a picture of:" HorizontalAlignment="Left" Margin="52,132,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Show Dog!" HorizontalAlignment="Left" Margin="135,255,0,0" VerticalAlignment="Top" Height="44" Width="93" Background="#FFEDB0F3" FontWeight="Bold" FontFamily="Arial Black" FontSize="14" Click="Button_Click"/>
 
     </Grid>
 </Window>
