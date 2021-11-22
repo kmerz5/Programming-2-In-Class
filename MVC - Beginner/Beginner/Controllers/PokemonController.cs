@@ -18,12 +18,27 @@ namespace Beginner.Controllers
 
             using (var client = new HttpClient())
             {
-                var json = client.GetStringAsync("https://pokeapi.co/api/v2/pokemon").Result;
+                var json = client.GetStringAsync("https://pokeapi.co/api/v2/pokemon?offset=0&limit=1100").Result;
 
                 pokemon = JsonConvert.DeserializeObject<PokiAPI>(json);
             }
             return View(pokemon.results);
             
+        }
+
+        public ActionResult Info(string id)
+        {
+            
+            PokemonInfo info;
+
+            using (var client = new HttpClient())
+            {
+                var json = client.GetStringAsync($"https://pokeapi.co/api/v2/pokemon/{id}").Result;
+
+                info = JsonConvert.DeserializeObject<PokemonInfo>(json);
+            }
+            return View(info);
+
         }
     }
 }
