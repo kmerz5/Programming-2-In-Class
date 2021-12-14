@@ -1,0 +1,16 @@
+﻿@model MVC_Beginner.Models.ChuckJokeAPI
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Random Chuck Norris Joke</h2>
+
+<div class="jumbotron">
+    <h1 class="display-4">@Model.value</h1>
+    <img src = "@Model.icon_url"/>
+
+</div>
+
+
+
