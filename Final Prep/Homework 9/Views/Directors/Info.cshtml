@@ -1,0 +1,32 @@
+﻿@model Homework_9.Models.Director
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Info</h2>
+
+<div>
+    <h4>Director @Model.Director_Name</h4>
+    <hr />
+    
+
+    @foreach (var item in @Model.Movies)
+    {
+        if (item.director_id == Model.Director_Id)
+        {
+            <div>
+            <ul>
+                <li><a href="@item.movie_imdb_link" target="_blank">@item.movie_title</a> that came out in @item.title_year</li>
+                
+            </ul>
+            </div>
+
+        }
+
+    }
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>

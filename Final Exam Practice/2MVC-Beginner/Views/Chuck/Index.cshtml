@@ -1,0 +1,14 @@
+﻿@model _2MVC_Beginner.Models.ChuckAPI
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Random Chuck Joke</h2>
+
+<div class="jumbotron">
+    <h3 class="display-4">@Model.value</h3>
+    <img src="@Model.icon_url" />
+   
+</div>
+

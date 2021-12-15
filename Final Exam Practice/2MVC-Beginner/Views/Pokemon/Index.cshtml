@@ -1,0 +1,40 @@
+﻿@model IEnumerable<_2MVC_Beginner.Models.PokemonAPI>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Pokemon</h2>
+
+
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.DisplayNameFor(model => model.name)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.url)
+        </td>
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.url)
+            </td>
+            <td>
+
+                @Html.ActionLink("Details", "Info", new { id = item.name })
+
+            </td>
+        </tr>
+    }
+</table>
